@@ -6,7 +6,7 @@ def line(katz_deli)
     queue = []
     count = 1
     katz_deli.each do |customer|
-      queue.push(count+". "+customer)
+      queue.push(count.to_s +". "+customer)
       count +=1
     end
     puts "The line is currently: " + queue.join(" ")

@@ -1,4 +1,5 @@
 def line (katz_deli)
+<<<<<<< HEAD
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
@@ -23,4 +24,17 @@ def now_serving(katz_deli)
     katz_deli.shift()
   else puts "There is nobody waiting to be served!"
   end
+=======
+  # if katz_deli.length == 0
+    # puts "The line is currently empty."
+
+    linequeue = "The line is currently:"
+    i = 1
+    until i<2 do
+      linequeue += "#{i}. #{katz_deli[i-1]}"
+      i++
+    end
+    puts linequeue
+  # end
+>>>>>>> 05cf978247cdd44276821787df22b41f35f14069
 end

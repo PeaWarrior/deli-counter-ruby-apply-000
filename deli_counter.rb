@@ -16,5 +16,4 @@ end
 def take_a_number(katz_deli, newcustomer)
   katz_deli.push(newcustomer)
   puts "Welcome, #{newcustomer}. You are number #{katz_deli.length} in line."
-
 end

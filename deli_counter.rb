@@ -6,6 +6,7 @@ def line(katz_deli)
     queue = ""
     count = 1
     katz_deli.each do |customer|
+      count +=1
       queue += count + ". " + customer
     end
     puts "The line is currently: " +queue

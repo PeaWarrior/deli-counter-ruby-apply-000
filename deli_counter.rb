@@ -3,13 +3,13 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    queue = []
+    queue = "The line is currently: "
     count = 1
     katz_deli.each do |customer|
-      queue.push((count.to_s) +". "+customer)
+      queue << "#{(count.to_s)}. #{customer})"
       count +=1
     end
-    puts "The line is currently: " + queue.join(" ")
+    puts queue
   end
 end
 

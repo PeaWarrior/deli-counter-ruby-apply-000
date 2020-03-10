@@ -12,3 +12,7 @@ def line(katz_deli)
     puts "The line is currently: " + queue.join(" ")
   end
 end
+
+def take_a_number(katz_deli, newcustomer)
+  puts "Welcome, "+newcustomer+". You are number "+ (katz_deli.length+1) + "in line."
+end
